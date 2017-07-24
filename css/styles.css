@@ -15,5 +15,26 @@ html {
 }
 
 *, *:before, *:after {
+  }
+
+
+/*EPINGLE ROSE AVEC ECRIT "FREELANCER".*/
+nav:before{
+  content:"Freelancer";
+  display:block;
+  background:#f0454c ;
+ color:white;
+ border-radius: 10px;
+ height: 30px;
+ width:100px;
+ height: 50px;
+ text-align: center;
+ margin-left: 200px;
+line-height: 3.5em;
+}
+nav, nav:before{
+  display: inline-block;
+
+}
    box-sizing: inherit;
 }
