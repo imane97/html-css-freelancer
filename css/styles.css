@@ -1,40 +1,78 @@
 /* ===============================
-   Colour Palette:
-   ---------------
-   Dark Grey/Gris Foncé:	                         #465065
-   Light Grey/Gris Claire:			                   #9aa0ab
-   Very Light Grey/Gris Très Claire (footer):       #b9c0c6
-   Red/Rouge:			                               #f0454c
-   Hover on icons, button and "More ->"             #000
-   =============================== */
+Colour Palette:
+---------------
+Dark Grey/Gris Foncé:	                         #465065
+Light Grey/Gris Claire:			                   #9aa0ab
+Very Light Grey/Gris Très Claire (footer):       #b9c0c6
+Red/Rouge:			                               #f0454c
+Hover on icons, button and "More ->"             #000
+=============================== */
 
 /* General */
 
 html {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  }
+}
 
+/*TAILLE DU BODY*/
+body {
+  width: 1140px;
+  max-width: calc(100% - 15px);
+  margin: 15px auto 0;
+}
 
 /*EPINGLE ROSE AVEC ECRIT "FREELANCER".*/
 nav:before{
   content:"Freelancer";
-  display:block;
   background:#f0454c ;
- color:white;
- border-radius: 10px;
- height: 30px;
- width:100px;
- height: 50px;
- text-align: center;
- margin-left: 200px;
-line-height: 3.5em;
+  color:white;
+  border-radius: 10px;
+  height: 30px;
+  width:100px;
+  height: 50px;
+  text-align: center;
+  margin-left: 200px;
+  line-height: 3.5em;
 }
+/*NAVIGATION*/
 nav, nav:before{
-  display: inline-block;
-
+display: block;
+/*position:  relative;*/
 }
-   box-sizing: inherit;
+nav {
+  align-items: flex-end;
+}
+/*Couleurs des icônes facebook et twitter.*/
+.fa-facebook {
+  color: blue;
+}
+.fa-twitter {
+  color: blue;}
+
+header{
+    background-image: url("../images/header.jpg");
+    height:1000px;
+    background size: cover;
+}
+/*TRAITS ROUGES*/
+h3:before{
+  content:"";
+  display: block;
+  height:7px;
+  width:48px;
+  background: #f0454c;
+  margin-bottom:24px;
+  left
+}
+
+section{
+  display: flex;
+}
+section .portfolio{display: flex;}
+.conteneur {
+  margin:220px;
+  top:0;
 }
