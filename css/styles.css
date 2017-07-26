@@ -13,66 +13,102 @@ Hover on icons, button and "More ->"             #000
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
+  box-sizing: inherit;
 }
 
-/*TAILLE DU BODY*/
-body {
-  width: 1140px;
-  max-width: calc(100% - 15px);
-  margin: 15px auto 0;
+/*        HEADER: IMAGE NAVIGATION SLOGAN               */
+/*                   Image Header                        */
+header{
+    background-image: url("../images/header.jpg");
+    height:1000px;
+    background size: cover;
+    font-family: montserrat;
+    /*display: flex;*/
+}
+/*               Remettre à la ligne le slogan           */
+span {
+  display: block ;
 }
 
-/*EPINGLE ROSE AVEC ECRIT "FREELANCER".*/
-nav:before{
-  content:"Freelancer";
-  background:#f0454c ;
+/*            Flex barre de navigation et freelancer        */
+.top{
+  display: flex;
+  justify-content: space-around;
+}
+
+/*            Fond rose du freelancer et du read more        */
+.top p, .slogan a{
+  background-size: contain;
+  background: #f0454c;
+  border-radius: 4px;
+  padding :20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  top:0;
   color:white;
-  border-radius: 10px;
-  height: 30px;
-  width:100px;
-  height: 50px;
-  text-align: center;
-  margin-left: 200px;
-  line-height: 3.5em;
 }
-/*NAVIGATION*/
-nav, nav:before{
-display: block;
-/*position:  relative;*/
-}
-nav {
-  align-items: flex-end;
-}
-/*Couleurs des icônes facebook et twitter.*/
+/*         Couleurs des icônes facebook et twitter        */
 .fa-facebook {
   color: blue;
 }
 .fa-twitter {
   color: blue;}
-
-header{
-    background-image: url("../images/header.jpg");
-    height:1000px;
-    background size: cover;
+/*                      Position du slogan                 */
+.slogan {
+  padding: 200px;
+  margin-top: 50px;
 }
-/*TRAITS ROUGES*/
-h3:before{
+/*                 Police petit slogan et navigation         */
+nav, .slogan p{
+font-family: opensans;
+}
+
+/*                       MAIN                            */
+main{
+  width: 970px;
+  margin:25px auto;
+
+}
+
+
+/*        Traits rouges au dessus des textes et du slogan        */
+h3:before, .slogan:before{
   content:"";
-  display: block;
+  display:flex;
   height:7px;
   width:48px;
   background: #f0454c;
   margin-bottom:24px;
   left
 }
-
-section{
+/*        Flex des trois grandes section du main                     */
+.conteneur{
   display: flex;
 }
-section .portfolio{display: flex;}
-.conteneur {
-  margin:220px;
-  top:0;
+.portfolio {
+  display: flex;
+}
+.team{
+  display: flex;
+}
+/*             Trois flex de la dernire section                    */
+.titre-team {
+  display: flex;
+}
+.joey{
+  display: flex;
+}
+.matt {
+  display: flex;
+}
+.mike{
+  display: flex;
+}
+/*             Polices du main                               */
+h3{
+  font-family: montserrat;
+}
+main{
+  font-family: opensans;
 }
