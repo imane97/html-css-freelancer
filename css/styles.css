@@ -20,11 +20,11 @@ html {
 /*        HEADER: IMAGE NAVIGATION SLOGAN               */
 /*                   Image Header                        */
 header{
-    background-image: url("../images/header.jpg");
-    height:1000px;
-    background size: cover;
-    font-family: montserrat;
-    /*display: flex;*/
+  background-image: url("../images/header.jpg");
+  height:1000px;
+  background size: cover;
+  font-family: montserrat;
+  /*display: flex;*/
 }
 /*               Remettre à la ligne le slogan           */
 span {
@@ -54,61 +54,82 @@ span {
 }
 .fa-twitter {
   color: blue;}
-/*                      Position du slogan                 */
-.slogan {
-  padding: 200px;
-  margin-top: 50px;
-}
-/*                 Police petit slogan et navigation         */
-nav, .slogan p{
-font-family: opensans;
-}
+  /*                      Position du slogan                 */
+  .slogan {
+    padding: 200px;
+    margin-top: 50px;
+  }
+  /*                 Police petit slogan et navigation         */
+  nav, .slogan p{
+    font-family: opensans;
+  }
 
-/*                       MAIN                            */
-main{
-  width: 970px;
-  margin:25px auto;
+  /*                       MAIN                            */
+  main{
+    width: 970px;
+    margin:25px auto;
 
-}
+  }
 
+  /*             Polices du main                               */
+  h3{
+    font-family: montserrat;
+  }
+  main p{
+    font-family: opensans;
+  }
 
-/*        Traits rouges au dessus des textes et du slogan        */
-h3:before, .slogan:before{
-  content:"";
-  display:flex;
-  height:7px;
-  width:48px;
-  background: #f0454c;
-  margin-bottom:24px;
-  left
-}
-/*        Flex des trois grandes section du main                     */
-.conteneur{
-  display: flex;
-}
-.portfolio {
-  display: flex;
-}
-.team{
-  display: flex;
-}
-/*             Trois flex de la dernire section                    */
-.titre-team {
-  display: flex;
-}
-.joey{
-  display: flex;
-}
-.matt {
-  display: flex;
-}
-.mike{
-  display: flex;
-}
-/*             Polices du main                               */
-h3{
-  font-family: montserrat;
-}
-main{
-  font-family: opensans;
-}
+  /*        Traits rouges au dessus des textes et du slogan        */
+  h3:before, .slogan:before{
+    content:"";
+    display:flex;
+    height:7px;
+    width:48px;
+    background: #f0454c;
+    margin-bottom:24px;
+    left
+  }
+  /*        Flex des trois grandes section du main                     */
+  .conteneur{
+    display: flex;
+  }
+  .portfolio {
+    display: flex;
+  }
+  .team{
+    display: flex;
+    flex-direction: column;
+  }
+  /*             Trois flex de la dernèire section                    */
+  .titre-team {
+    display: flex;
+  }
+  .imgteam{
+    display: flex;
+  }
+  .joey{
+    display: flex;
+  }
+  .matt {
+    display: flex;
+  }
+  .mike{
+    display: flex;
+  }
+  /*                   Images de la dernière section en rond              */
+  .joey img {
+    border-radius: 50px;
+    width: 130px;
+    height:130px;
+    border-style:
+  }
+  .matt img {
+    border-radius: 50px;
+    width: 130px;
+    height:130px;
+  }
+  .mike img {
+    border-radius: 50px;
+    width: 130px;
+    height:130px;
+  }
