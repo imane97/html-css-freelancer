@@ -26,20 +26,28 @@ header{
   font-family: montserrat;
   /*display: flex;*/
 }
-/*               Remettre à la ligne le slogan           */
+/*               Remettre à la ligne avec les span          */
 span {
   display: block ;
 }
 
-/*            Flex barre de navigation et freelancer        */
+/*    Flex :barre de navigation,freelancer et slogan  */
 .top{
   display: flex;
   justify-content: space-around;
 }
+a.menu{
+  display: flex;
+ justify-content: space-between;
 
-/*            Fond rose du freelancer et du read more        */
-.top p, .slogan a{
-  background-size: contain;
+}
+.slogan{
+  display: flex;
+  flex-direction: column;
+}
+
+/*            Fonds rose du freelancer et du read more        */
+.top p{
   background: #f0454c;
   border-radius: 4px;
   padding :20px;
@@ -48,22 +56,49 @@ span {
   top:0;
   color:white;
 }
-/*         Couleurs des icônes facebook et twitter        */
-.fa-facebook {
-  color: blue;
+.slogan a{
+  background: #f0454c;
+  border-radius: 8px;
+  padding :15px;
+  height: 50px;
+  width: 150px;
+  color:white;
+  font-size: 15px;
+  text-align: center;
+  font-family:montserrat;
 }
-.fa-twitter {
-  color: blue;}
+/*         Couleurs des icônes facebook et twitter        */
+.rose {
+  color: #f0454c;
+}
+.rose {
+  color: #f0445c;}
+
+  /**/
+
   /*                      Position du slogan                 */
   .slogan {
     padding: 200px;
     margin-top: 50px;
   }
+.top{
+  align-items: baseline;
+}
   /*                 Police petit slogan et navigation         */
   nav, .slogan p{
     font-family: opensans;
   }
 
+/*            Aspect de la navigation et tout autre lien           */
+a{
+  text-decoration: none;
+  color:#f0454;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+}
   /*                       MAIN                            */
   main{
     width: 970px;
@@ -74,9 +109,17 @@ span {
   /*             Polices du main                               */
   h3{
     font-family: montserrat;
+    font-size: 25px;
   }
-  main p{
+   p main{
     font-family: opensans;
+    color:#9aa0ab;
+  }
+  .profession {
+    color:#f0454c;
+  }
+  h3,h4{
+    color: #465065;
   }
 
   /*        Traits rouges au dessus des textes et du slogan        */
@@ -87,8 +130,16 @@ span {
     width:48px;
     background: #f0454c;
     margin-bottom:24px;
-    left
   }
+  /*            Flèches rouges après les More                */
+  main a:after{
+    content:"\2192";
+    color:#f0454c;
+  }
+  main a{
+    color:#f0454c;
+  }
+
   /*        Flex des trois grandes section du main                     */
   .conteneur{
     display: flex;
@@ -133,3 +184,20 @@ span {
     width: 130px;
     height:130px;
   }
+
+/*                            FOOTER                   */
+/*                    Couleur des icônes               */
+footer{
+  color:#b9c0c6;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width:940px;
+  margin: 0 auto;
+  border-top: 1px solid grey;
+  align-items: center;
+
+}
+.fa-instagram{
+  color: black;
+}
