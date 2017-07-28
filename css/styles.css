@@ -21,10 +21,12 @@ html {
 /*                   Image Header                        */
 header{
   background-image: url("../images/header.jpg");
-  height:1000px;
-  background size: cover;
+  height: 1000px;
+  max-height: 100%;
+  max-width: 100%;
+  background-size: cover;
   font-family: montserrat;
-  /*display: flex;*/
+
 }
 /*               Remettre à la ligne avec les span          */
 span {
@@ -89,10 +91,12 @@ a.menu{
     font-family: opensans;
   }
 
+
 /*            Aspect de la navigation et tout autre lien           */
 a{
   text-decoration: none;
-  color:#f0454;
+  color:#465065;
+
 }
 
 .menu{
@@ -101,10 +105,9 @@ a{
 }
   /*                       MAIN                            */
   main{
-    width: 970px;
+    width: 940px;
     margin:25px auto;
-
-  }
+}
 
   /*             Polices du main                               */
   h3{
@@ -194,10 +197,12 @@ footer{
   height: 100px;
   width:940px;
   margin: 0 auto;
-  border-top: 1px solid grey;
+  border-top: 1px solid #b9c0c6;
   align-items: center;
 
 }
 .fa-instagram{
   color: black;
 }
+
+/
